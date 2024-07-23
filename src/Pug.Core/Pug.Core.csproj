@@ -22,7 +22,7 @@
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/NDWX/PugFX.git</RepositoryUrl>
     <PackageTags>Pug Core Library</PackageTags>
-    <PackageReleaseNotes>Language feature enhancements.</PackageReleaseNotes>
+    <PackageReleaseNotes>Language feature and other enhancements.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
