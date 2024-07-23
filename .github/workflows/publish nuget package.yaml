@@ -1,4 +1,4 @@
-name: main - build and NuGet publish
+name: publish nuget package
 
 on:
   push:
