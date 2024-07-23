@@ -7,7 +7,7 @@ on:
 
 env:
   BuildConfiguration: release
-  CoreProject: Src/Pug.Core/Pug.Core.csproj
+  CoreProject: src/Pug.Core/Pug.Core.csproj
   PackagesBaseFolder: packages
 
 jobs:
