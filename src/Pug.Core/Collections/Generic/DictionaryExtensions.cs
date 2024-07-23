@@ -1,9 +1,11 @@
+using System;
 using System.Collections.Generic;
 
 namespace Pug.Collections.Generic.Extensions
 {
 	public static class DictionaryExtensions
 	{
+		[Obsolete("Use System.Collections.ObjectModel.ReadOnlyDictionary instead")]
 		public static IDictionary<TKey, TValue> ReadOnly<TKey, TValue>(this IDictionary<TKey, TValue> dictionary)
 		{
 			if (dictionary == null)
