@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - 'support/**'
 
 env:
   BuildConfiguration: release
