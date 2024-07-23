@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFrameworks>netcoreapp2.1;netstandard2.0;net5.0</TargetFrameworks>
+    <LangVersion>9</LangVersion>
     <AssemblyTitle>Pug.Core</AssemblyTitle>
     <AssemblyVersion>2.0.2</AssemblyVersion>
     <Description>Pug Core Library</Description>
@@ -10,7 +11,6 @@
     <PackageVersion>2.0.2</PackageVersion>
     <FileVersion>2.0.2</FileVersion>
     <AssemblyName>Pug.Core</AssemblyName>
-    <LangVersion>12</LangVersion>
     <!--<PackageTargetFallback Condition=" '$(TargetFramework)' == 'netcoreapp1.0' ">$(PackageTargetFallback);dnxcore50</PackageTargetFallback>-->
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
