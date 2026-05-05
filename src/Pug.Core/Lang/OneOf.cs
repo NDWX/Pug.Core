@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Security.Cryptography;
+using Pug.Lang.Extensions;
 
 namespace Pug.Lang
 {

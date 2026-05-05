@@ -1,6 +1,6 @@
 using System;
 
-namespace Pug.Lang
+namespace Pug.Extensions
 {
 	public static class RangeExtensions
 	{
