@@ -8,13 +8,21 @@ namespace Pug
 		public new T? Start
 		{
 			get;
+#if NET5_0_OR_GREATER
+			init;
+#else
 			set;
+#endif
 		}
 	
 		public new T? End
 		{
 			get;
+#if NET5_0_OR_GREATER
+			init;
+#else
 			set;
+#endif
 		}
 	}
 }

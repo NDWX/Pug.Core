@@ -1,4 +1,5 @@
 ﻿using System;
+using Pug.Lang.Extensions;
 
 namespace Pug.Lang
 {

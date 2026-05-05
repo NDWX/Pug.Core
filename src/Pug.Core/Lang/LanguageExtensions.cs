@@ -1,6 +1,7 @@
 ﻿using System;
+using Pug.Lang;
 
-namespace Pug.Lang
+namespace Pug.Lang.Extensions
 {
 	public static class LanguageExtensions
 	{

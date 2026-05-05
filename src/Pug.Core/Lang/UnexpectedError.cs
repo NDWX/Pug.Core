@@ -1,7 +1,6 @@
 using System;
-using Pug.Lang;
 
-namespace Pug.Lang
+namespace Pug
 {
 	public class UnexpectedError : Exception
 	{

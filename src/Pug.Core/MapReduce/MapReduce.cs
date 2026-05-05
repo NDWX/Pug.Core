@@ -9,11 +9,12 @@ namespace Pug.MapReduce
 		{
 			List<R> results = new ();
 
-			IEnumerator<I> enumerator = items.GetEnumerator();
-
-			while (enumerator.MoveNext())
+			using( IEnumerator<I> enumerator = items.GetEnumerator() )
 			{
-				results.Add(func(enumerator.Current));
+				while( enumerator.MoveNext() )
+				{
+					results.Add( func( enumerator.Current ) );
+				}
 			}
 
 			return results;
@@ -21,11 +22,12 @@ namespace Pug.MapReduce
 
 		public static void Map<I, A>(this IEnumerable<I> items, Action<I, A> action, A argument)
 		{
-			IEnumerator<I> enumerator = items.GetEnumerator();
-
-			while (enumerator.MoveNext())
+			using( IEnumerator<I> enumerator = items.GetEnumerator() )
 			{
-				action(enumerator.Current, argument);
+				while( enumerator.MoveNext() )
+				{
+					action( enumerator.Current, argument );
+				}
 			}
 		}
 
@@ -33,11 +35,12 @@ namespace Pug.MapReduce
 		{
 			R result = default(R);
 
-			IEnumerator<I> enumerator = items.GetEnumerator();
-
-			while(enumerator.MoveNext())
+			using( IEnumerator<I> enumerator = items.GetEnumerator() )
 			{
-				result = reduction(enumerator.Current, result);
+				while( enumerator.MoveNext() )
+				{
+					result = reduction( enumerator.Current, result );
+				}
 			}
 
 			return result;

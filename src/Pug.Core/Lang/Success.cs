@@ -1,3 +1,5 @@
+using System;
+
 namespace Pug.Lang
 {
 	public record Success
@@ -19,6 +21,12 @@ namespace Pug.Lang
 		public static Success<TValue> With( TValue value )
 		{
 			return new Success<TValue>( value );
+		}
+		
+		[Obsolete( "Use With instead")]
+		public static Success<TValue> From( TValue result )
+		{
+			return new Success<TValue>( result );
 		}
 	}
 }
